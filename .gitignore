@@ -1,0 +1,12 @@
+
+*.class
+
+*.iml
+
+*.bat
+
+*.gradle
+
+*.idea
+
+build/

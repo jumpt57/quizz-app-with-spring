@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: App
+  devtools:
+    livereload:
+      enabled: false
+server:
+  port: 80

@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: App
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        temp:
+           use_jdbc_metadata_defaults: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/application?currentSchema=dev
+    username: dev
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8080
+
+jwt:
+  expires_in: 300 # 5 minutes
+  secret: secret_application
+
+aws:
+  endpointUrl: https://s3.eu-west-3.amazonaws.com
+  bucket: ######
+  key: ######
+
